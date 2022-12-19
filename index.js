@@ -23,7 +23,9 @@ require('dotenv').config()
 
 // Syncing all the models at once.
 conn.sync({ force: false }).then(() => {
-  server.listen(process.env.DB_PORT, () => {
-    console.log('%s listening at', process.env.DB_PORT || 3001); // eslint-disable-line no-console
+  server.listen(process.env.PORT, () => {
+    console.log('%s listening at', process.env.PORT || 3001); // eslint-disable-line no-console
   });
 });
+
+
