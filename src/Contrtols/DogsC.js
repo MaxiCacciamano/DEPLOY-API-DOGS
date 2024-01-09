@@ -149,6 +149,7 @@ module.exports = {
     GetDogs,
     GetDogsId,
     postDogs,
-    deleteDogs
+    deleteDogs,
+    getDogsApi
 
 };
